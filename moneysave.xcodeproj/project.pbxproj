@@ -14,6 +14,8 @@
 		D580EE482A1D0B2A000B4439 /* moneysave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D580EE462A1D0B2A000B4439 /* moneysave.xcdatamodeld */; };
 		D580EE4A2A1D0B2E000B4439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D580EE492A1D0B2E000B4439 /* Assets.xcassets */; };
 		D580EE4D2A1D0B2E000B4439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D580EE4B2A1D0B2E000B4439 /* LaunchScreen.storyboard */; };
+		D580EE572A1D0BA4000B4439 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE562A1D0BA4000B4439 /* TabbarController.swift */; };
+		D580EE5A2A1D2B99000B4439 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE592A1D2B99000B4439 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D580EE492A1D0B2E000B4439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D580EE4C2A1D0B2E000B4439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D580EE4E2A1D0B2E000B4439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D580EE562A1D0BA4000B4439 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		D580EE592A1D2B99000B4439 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		D580EE3C2A1D0B2A000B4439 /* moneysave */ = {
 			isa = PBXGroup;
 			children = (
+				D580EE582A1D2B56000B4439 /* Utilis */,
+				D580EE542A1D0B57000B4439 /* Controller */,
 				D580EE3D2A1D0B2A000B4439 /* AppDelegate.swift */,
 				D580EE3F2A1D0B2A000B4439 /* SceneDelegate.swift */,
 				D580EE412A1D0B2A000B4439 /* ViewController.swift */,
@@ -68,6 +74,22 @@
 				D580EE462A1D0B2A000B4439 /* moneysave.xcdatamodeld */,
 			);
 			path = moneysave;
+			sourceTree = "<group>";
+		};
+		D580EE542A1D0B57000B4439 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D580EE562A1D0BA4000B4439 /* TabbarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D580EE582A1D2B56000B4439 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				D580EE592A1D2B99000B4439 /* Constants.swift */,
+			);
+			path = Utilis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +166,9 @@
 				D580EE422A1D0B2A000B4439 /* ViewController.swift in Sources */,
 				D580EE482A1D0B2A000B4439 /* moneysave.xcdatamodeld in Sources */,
 				D580EE3E2A1D0B2A000B4439 /* AppDelegate.swift in Sources */,
+				D580EE572A1D0BA4000B4439 /* TabbarController.swift in Sources */,
 				D580EE402A1D0B2A000B4439 /* SceneDelegate.swift in Sources */,
+				D580EE5A2A1D2B99000B4439 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
