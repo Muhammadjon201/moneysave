@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func callTabbar(){
-        let vc = TabbarController()
+        let vc = OnboardingViewController()
         let nc = UINavigationController(rootViewController: vc)
         
         if window == nil {

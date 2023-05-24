@@ -16,9 +16,16 @@
 		D580EE4D2A1D0B2E000B4439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D580EE4B2A1D0B2E000B4439 /* LaunchScreen.storyboard */; };
 		D580EE572A1D0BA4000B4439 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE562A1D0BA4000B4439 /* TabbarController.swift */; };
 		D580EE5A2A1D2B99000B4439 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE592A1D2B99000B4439 /* Constants.swift */; };
+		D580EE5C2A1E4776000B4439 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE5B2A1E4776000B4439 /* OnboardingViewController.swift */; };
+		D580EE5E2A1E4FBA000B4439 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE5D2A1E4FBA000B4439 /* extension.swift */; };
+		D580EE612A1E56DF000B4439 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE602A1E56DF000B4439 /* SignUpViewController.swift */; };
+		F6FABE129488B8ECF5714549 /* Pods_moneysave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E342FFDDE3DA6309F0BE07 /* Pods_moneysave.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55E342FFDDE3DA6309F0BE07 /* Pods_moneysave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moneysave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6794B075537229E23D9EAB63 /* Pods-moneysave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moneysave.debug.xcconfig"; path = "Target Support Files/Pods-moneysave/Pods-moneysave.debug.xcconfig"; sourceTree = "<group>"; };
+		A83907935E9E845141339D03 /* Pods-moneysave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moneysave.release.xcconfig"; path = "Target Support Files/Pods-moneysave/Pods-moneysave.release.xcconfig"; sourceTree = "<group>"; };
 		D580EE3A2A1D0B2A000B4439 /* moneysave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moneysave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D580EE3D2A1D0B2A000B4439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D580EE3F2A1D0B2A000B4439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +37,9 @@
 		D580EE4E2A1D0B2E000B4439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D580EE562A1D0BA4000B4439 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		D580EE592A1D2B99000B4439 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D580EE5B2A1E4776000B4439 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		D580EE5D2A1E4FBA000B4439 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		D580EE602A1E56DF000B4439 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FABE129488B8ECF5714549 /* Pods_moneysave.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8BA8103BCA25F9EF48421A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6794B075537229E23D9EAB63 /* Pods-moneysave.debug.xcconfig */,
+				A83907935E9E845141339D03 /* Pods-moneysave.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D580EE312A1D0B2A000B4439 = {
 			isa = PBXGroup;
 			children = (
 				D580EE3C2A1D0B2A000B4439 /* moneysave */,
 				D580EE3B2A1D0B2A000B4439 /* Products */,
+				2C8BA8103BCA25F9EF48421A /* Pods */,
+				DF3746CEC66F55933B13BED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +84,7 @@
 		D580EE3C2A1D0B2A000B4439 /* moneysave */ = {
 			isa = PBXGroup;
 			children = (
+				D580EE5F2A1E56BD000B4439 /* Auth */,
 				D580EE582A1D2B56000B4439 /* Utilis */,
 				D580EE542A1D0B57000B4439 /* Controller */,
 				D580EE3D2A1D0B2A000B4439 /* AppDelegate.swift */,
@@ -88,8 +111,26 @@
 			isa = PBXGroup;
 			children = (
 				D580EE592A1D2B99000B4439 /* Constants.swift */,
+				D580EE5D2A1E4FBA000B4439 /* extension.swift */,
 			);
 			path = Utilis;
+			sourceTree = "<group>";
+		};
+		D580EE5F2A1E56BD000B4439 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D580EE5B2A1E4776000B4439 /* OnboardingViewController.swift */,
+				D580EE602A1E56DF000B4439 /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		DF3746CEC66F55933B13BED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55E342FFDDE3DA6309F0BE07 /* Pods_moneysave.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D580EE512A1D0B2E000B4439 /* Build configuration list for PBXNativeTarget "moneysave" */;
 			buildPhases = (
+				8E5CB0F6BEDCE81A3FF4D00E /* [CP] Check Pods Manifest.lock */,
 				D580EE362A1D0B2A000B4439 /* Sources */,
 				D580EE372A1D0B2A000B4439 /* Frameworks */,
 				D580EE382A1D0B2A000B4439 /* Resources */,
+				EBD55A47BDEBDF1B90AEE0EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +201,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E5CB0F6BEDCE81A3FF4D00E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moneysave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD55A47BDEBDF1B90AEE0EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moneysave/Pods-moneysave-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-moneysave/Pods-moneysave-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-moneysave/Pods-moneysave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D580EE362A1D0B2A000B4439 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -167,8 +252,11 @@
 				D580EE482A1D0B2A000B4439 /* moneysave.xcdatamodeld in Sources */,
 				D580EE3E2A1D0B2A000B4439 /* AppDelegate.swift in Sources */,
 				D580EE572A1D0BA4000B4439 /* TabbarController.swift in Sources */,
+				D580EE5C2A1E4776000B4439 /* OnboardingViewController.swift in Sources */,
 				D580EE402A1D0B2A000B4439 /* SceneDelegate.swift in Sources */,
+				D580EE612A1E56DF000B4439 /* SignUpViewController.swift in Sources */,
 				D580EE5A2A1D2B99000B4439 /* Constants.swift in Sources */,
+				D580EE5E2A1E4FBA000B4439 /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +398,7 @@
 		};
 		D580EE522A1D0B2E000B4439 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6794B075537229E23D9EAB63 /* Pods-moneysave.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +427,7 @@
 		};
 		D580EE532A1D0B2E000B4439 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A83907935E9E845141339D03 /* Pods-moneysave.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
