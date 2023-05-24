@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class OnboardingViewController: UIViewController {
-    
+        
     private lazy var landingImg: UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleAspectFill
@@ -42,6 +42,19 @@ final class OnboardingViewController: UIViewController {
         setButtons()
     }
     
+    @objc func signUpButtonTapped(){
+        print("signUp")
+    }
+    
+    @objc func loginTapped(){
+        print("Login")
+    }
+}
+
+//MARK: - SetUpUI
+
+extension OnboardingViewController {
+    
     func setConstraints(){
         view.addSubview(landingImg)
         view.addSubview(nameTitle)
@@ -69,9 +82,9 @@ final class OnboardingViewController: UIViewController {
     
     func setButtons(){
         
-        let loginButton = UIButton()
-        loginButton.applyLogInStyle()
+        let loginButton = CustomButtonFactory.createButton(title: "Login", color: UIColor(named: "signInColor")!, titleColor: UIColor(named: "launchColor")!)
         loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+        
         view.addSubview(loginButton)
         
         loginButton.snp.makeConstraints { make in
@@ -92,13 +105,5 @@ final class OnboardingViewController: UIViewController {
             make.right.equalTo(-20)
             make.height.equalTo(56)
         }
-    }
-    
-    @objc func signUpButtonTapped(){
-        print("signUp")
-    }
-    
-    @objc func loginTapped(){
-        print("Login")
     }
 }
