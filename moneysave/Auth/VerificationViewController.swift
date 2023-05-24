@@ -11,7 +11,7 @@ class VerificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Verification"
+        title = "Verification Screen"
         view.backgroundColor = .white
     }
     
