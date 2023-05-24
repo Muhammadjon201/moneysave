@@ -8,16 +8,16 @@
 import UIKit
 import SnapKit
 
-class OnboardingViewController: UIViewController {
+final class OnboardingViewController: UIViewController {
     
-    lazy var landingImg: UIImageView = {
+    private lazy var landingImg: UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleAspectFill
         img.image = UIImage(named: "Illustration")
         return img
     }()
     
-    lazy var nameTitle: UILabel = {
+    private lazy var nameTitle: UILabel = {
         let lbl = UILabel()
         lbl.text = "Gain total control of your money"
         lbl.font = .systemFont(ofSize: 32, weight: .medium)
@@ -26,7 +26,7 @@ class OnboardingViewController: UIViewController {
         return lbl
     }()
     
-    lazy var descriptionTitle: UILabel = {
+    private lazy var descriptionTitle: UILabel = {
         let lbl = UILabel()
         lbl.text = "Become your own money manager and make every cent count"
         lbl.font = .systemFont(ofSize: 16, weight: .regular)
