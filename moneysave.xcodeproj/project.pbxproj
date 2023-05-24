@@ -21,6 +21,7 @@
 		D580EE5E2A1E4FBA000B4439 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE5D2A1E4FBA000B4439 /* extension.swift */; };
 		D580EE612A1E56DF000B4439 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D580EE602A1E56DF000B4439 /* SignUpViewController.swift */; };
 		D58617622A1E91030001C416 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58617612A1E91030001C416 /* ButtonFactory.swift */; };
+		D58617642A1EA19C0001C416 /* TextFieldFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58617632A1EA19C0001C416 /* TextFieldFactory.swift */; };
 		F6FABE129488B8ECF5714549 /* Pods_moneysave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E342FFDDE3DA6309F0BE07 /* Pods_moneysave.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		D580EE5D2A1E4FBA000B4439 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		D580EE602A1E56DF000B4439 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D58617612A1E91030001C416 /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		D58617632A1EA19C0001C416 /* TextFieldFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D58617612A1E91030001C416 /* ButtonFactory.swift */,
+				D58617632A1EA19C0001C416 /* TextFieldFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				80E7B57B2A1EA48D002860E3 /* VerificationViewController.swift in Sources */,
 				D580EE5C2A1E4776000B4439 /* OnboardingViewController.swift in Sources */,
 				D580EE402A1D0B2A000B4439 /* SceneDelegate.swift in Sources */,
+				D58617642A1EA19C0001C416 /* TextFieldFactory.swift in Sources */,
 				D58617622A1E91030001C416 /* ButtonFactory.swift in Sources */,
 				D580EE612A1E56DF000B4439 /* SignUpViewController.swift in Sources */,
 				D580EE5A2A1D2B99000B4439 /* Constants.swift in Sources */,
