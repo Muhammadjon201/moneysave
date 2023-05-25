@@ -13,6 +13,7 @@ class TextfieldFactory {
         textField.placeholder = placeholder
         textField.backgroundColor = color
         textField.layer.cornerRadius = 10
+        textField.layer.borderWidth = 0.2
         return textField
     }
 }
