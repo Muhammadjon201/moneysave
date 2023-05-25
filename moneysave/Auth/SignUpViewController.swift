@@ -17,6 +17,14 @@ final class SignUpViewController: UIViewController {
         btn.addTarget(self, action: #selector(tickBtnTapped), for: .touchUpInside)
         return btn
     }()
+    
+    lazy var policyBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("By signing up, you agree to the Terms of Service and Privacy Policy", for: .normal)
+        btn.titleLabel?.numberOfLines = 2
+        btn.titleLabel?.textAlignment = .center
+        return btn
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +46,7 @@ extension SignUpViewController {
         view.addSubview(emailField)
         view.addSubview(passwordField)
         view.addSubview(tickBtn)
+        view.addSubview(policyBtn)
         
         nameField.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(50)
@@ -64,6 +73,12 @@ extension SignUpViewController {
             make.top.equalTo(passwordField.snp.bottom).offset(15)
             make.left.equalTo(15)
             make.height.width.equalTo(32)
+        }
+        
+        policyBtn.snp.makeConstraints { make in
+            make.centerX.equalTo(tickBtn)
+            make.left.equalTo(tickBtn.snp.right).offset(5)
+            make.right.equalTo(-20)
         }
     }
     
