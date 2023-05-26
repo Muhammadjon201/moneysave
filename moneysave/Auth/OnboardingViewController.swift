@@ -48,7 +48,8 @@ final class OnboardingViewController: UIViewController {
     }
     
     @objc func loginTapped(){
-        print("Login")
+        let vc = LoginViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
