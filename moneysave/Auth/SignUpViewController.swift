@@ -147,6 +147,8 @@ extension SignUpViewController {
     }
 
     @objc func signUpBtnTapped(){
+        let vc = VerificationViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
         print("signUpBtnTapped")
     }
 
